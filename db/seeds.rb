@@ -4,10 +4,10 @@ puts 'Seeding the database...'
 
 # if you change categories, please update on app/views/projects/new.html.slim page also
 [
-  { pt: 'Opt1',ru: '�������� ��������' },
-  { pt: 'Opt2',ru: '����� ��������' },
-  { pt: 'Opt3',ru: '���������� ���������' },
-  { pt: 'Opt4',ru: '���������' },
+  { pt: 'Opt1',ru: 'Домашние животные' },
+  { pt: 'Opt2',ru: 'Дикие животные' },
+  { pt: 'Opt3',ru: 'Фермерские хозяйства' },
+  { pt: 'Opt4',ru: 'Акватория' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
@@ -22,11 +22,11 @@ puts 'Seeding the database...'
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
   host: '',
   base_url: "",
-  email_contact: 'tp@inbox.ru',
-  email_payments: 'tp@inbox.ru',
-  email_projects: 'tp@inbox.ru',
-  email_system: 'tp@inbox.ru',
-  email_no_reply: 'tp@inbox.ru',
+  email_contact: 'contact@русьзверь.рф',
+  email_payments: 'finance@русьзверь.рф',
+  email_projects: 'projects@русьзверь.рф',
+  email_system: 'system@русьзверь.рф',
+  email_no_reply: 'no-reply@русьзверь.рф',
   facebook_url: "https://www.facebook.com/producerun",
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/producerun',
