@@ -1,13 +1,13 @@
-# coding: utf-8
+#encoding: utf-8
 
 puts 'Seeding the database...'
 
 # if you change categories, please update on app/views/projects/new.html.slim page also
 [
-  { pt: 'Opt1',ru: 'Домашние животные' },
-  { pt: 'Opt2',ru: 'Дикие животные' },
-  { pt: 'Opt3',ru: 'Фермерские хозяйства' },
-  { pt: 'Opt4',ru: 'Акватория' },
+  { pt: 'Opt1',ru: 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' },
+  { pt: 'Opt2',ru: 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' },
+  { pt: 'Opt3',ru: 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' },
+  { pt: 'Opt4',ru: 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
@@ -20,13 +20,13 @@ puts 'Seeding the database...'
 {
   company_name: 'Russin Pets Crowdfunding',
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
-  host: 'Русьзверь.рф',
-  base_url: "http://www.Русьзверь.рф",
-  email_contact: 'info+contact@русьзверь.рф',
-  email_payments: 'info+finance@русьзверь.рф',
-  email_projects: 'info+projects@русьзверь.рф',
-  email_system: 'info+system@русьзверь.рф',
-  email_no_reply: 'info+no-reply@русьзверь.рф',
+  host: 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
+  base_url: "http://www.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ",
+  email_contact: 'info+contact@пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
+  email_payments: 'info+finance@пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
+  email_projects: 'info+projects@пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
+  email_system: 'info+system@пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
+  email_no_reply: 'info+no-reply@пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅ',
   facebook_url: "https://www.facebook.com/producerun",
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/producerun',
