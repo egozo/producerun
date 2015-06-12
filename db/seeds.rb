@@ -18,15 +18,15 @@ puts 'Seeding the database...'
  end
 
 {
-  company_name: 'Russin Pets Crowdfunding',
+  compacny_name: 'Russin Pets Crowdfunding',
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
-  host: '���������.��',
-  base_url: "http://www.���������.��",
-  email_contact: 'info+contact@���������.��',
-  email_payments: 'info+finance@���������.��',
-  email_projects: 'info+projects@���������.��',
-  email_system: 'info+system@���������.��',
-  email_no_reply: 'info+no-reply@���������.��',
+  host: '',
+  base_url: "",
+  email_contact: 'tp@inbox.ru',
+  email_payments: 'tp@inbox.ru',
+  email_projects: 'tp@inbox.ru',
+  email_system: 'tp@inbox.ru',
+  email_no_reply: 'tp@inbox.ru',
   facebook_url: "https://www.facebook.com/producerun",
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/producerun',
