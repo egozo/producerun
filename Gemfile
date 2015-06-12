@@ -25,7 +25,7 @@ gem 'i18n_alchemy'
 gem 'schema_plus'
 gem 'chartkick'
 gem 'catarse_settings_db', '>= 0.1.0'
-
+gem 'mina-sidekiq'
 # Notifications
 gem 'user_notifier', '~> 0.0.5'
 

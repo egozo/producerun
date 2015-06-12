@@ -4,37 +4,29 @@ puts 'Seeding the database...'
 
 # if you change categories, please update on app/views/projects/new.html.slim page also
 [
-  { pt: 'Opt1', en: 'Bundles' },
-  { pt: 'Opt2',en: 'Produce' },
-  { pt: 'Opt3',en: 'Eggs & Dairy' },
-  { pt: 'Opt4',en: 'Meat & Fish' },
-  { pt: 'Opt5',en: 'Bakery' },
-  { pt: 'Opt6',en: 'Pantry' },
-  { pt: 'Opt7',en: 'Snacks' },
-  { pt: 'Opt8',en: 'Drinks' },
-  { pt: 'Opt9',en: 'Floral & Home' },
-  { pt: 'Opt10',en: 'Prepared Foods' },
-  { pt: 'Opt11',en: 'CSA' },
-  { pt: 'Opt12',en: 'Misc' },
+  { pt: 'Opt1',ru: 'Домашние животные' },
+  { pt: 'Opt2',ru: 'Дикие животные' },
+  { pt: 'Opt3',ru: 'Фермерские хозяйства' },
+  { pt: 'Opt4',ru: 'Акватория' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
    category.update_attributes({
-     name_en: name[:en]
+     name_en: name[:ru]
    })
    puts name
  end
 
 {
-  company_name: 'ProduceRun',
+  company_name: 'Russin Pets Crowdfunding',
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
-  host: 'producerun.com',
-  base_url: "http://www.producerun.com",
-  email_contact: 'info+contact@producerun.com',
-  email_payments: 'info+finance@producerun.com',
-  email_projects: 'info+projects@producerun.com',
-  email_system: 'info+system@producerun.com',
-  email_no_reply: 'info+no-reply@producerun.com',
+  host: 'Русьзверь.рф',
+  base_url: "http://www.Русьзверь.рф",
+  email_contact: 'info+contact@русьзверь.рф',
+  email_payments: 'info+finance@русьзверь.рф',
+  email_projects: 'info+projects@русьзверь.рф',
+  email_system: 'info+system@русьзверь.рф',
+  email_no_reply: 'info+no-reply@русьзверь.рф',
   facebook_url: "https://www.facebook.com/producerun",
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/producerun',
@@ -58,7 +50,7 @@ puts 'Seeding the database...'
   mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
   sendgrid_user_name: 'hackandgrow',
   minimum_goal_for_video: '5000',
-  aws_bucket: 'producerun',
+  aws_bucket: 'russianbeast',
 
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
@@ -68,8 +60,8 @@ puts 'Seeding the database...'
 end
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = '39410167937'
-  o.secret = 'e55126b947fccbff9a86d9716c179860'
+  o.key = '976574999054330'
+  o.secret = '729f5c225031bf17512aaff8ad3051cb'
   o.path = 'facebook'
 end
 
@@ -100,8 +92,8 @@ end
 
 Rails.cache.clear
 
-user = User.where( name: 'Asd Name', email: 'asd@asd.asd').first_or_initialize do |user|
-  user.password = 'asdasd'
+user = User.where( name: 'Admin', email: 'super@puper.com').first_or_initialize do |user|
+  user.password = 'super@puper.com'
   user.admin = true
   puts "User #{user.email} created"
   user.save
