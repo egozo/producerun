@@ -1,0 +1,55 @@
+---
+ru:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one: у меня была другая кампания на платформе Русьзверь.рф
+          two: от человека, у которого была кампания в на платформе Русьзверь.рф
+          three: друг / коллега / профессиональный контакт
+          four: от кампании, которая размещала проект на платформе
+          five: статья в блоге
+          six: история в прессе (портал новостей в Интернете, ТВ, газете, журнал)
+          seven: на мероприятии / лекции 
+          eight: интернет-поиск
+          nine: другой
+    validation_texts:
+      reward:
+        minimum_value: Введите минимальное значение, больше или равное, чем 10
+        description: Войдите в описание для вознаграждения
+      bank_account:
+        bank_id: Выберите Ваш банк
+        agency: What is the agency's number?
+        account: What is the account number ?
+        account_digit: What is the check digit ?
+        owner_name: Enter a name with a minimum of 5 and a maximum of 30 letters
+        owner_document: Enter a CPF or CNPJ valid for the account holder
+      contribution:
+        payer_name: Please type the name of supporter
+        payer_email: Please enter a valid email address
+        payer_document: Please enter a valid CPF or CNPJ
+        address_state: Select a state
+        address_street: Enter the street name
+        address_number: Enter the address number
+        address_city: Enter the city name
+        address_zip_code: Enter the zip code
+        address_phone_number: Enter the phone number
+    prompts:
+      project:
+        category: Выберите категорию
+        select: Выберите опцию
+        traffic_sources: Откуда Вы узнали о нас?
+    hints:
+      project:
+        select: Выберите опцию
+        traffic_sources: Откуда Вы попали к нам?
+        name: Укажите легко запоминаемое имя.
+        permalink: Укажите что-то простое, локаничное и хорошо определяющее Ваш
+          проект.
+        category: Выберите то, что наиболее подходит для Вашей кампании.
+        goal:Выберите финансовую цель в соответствии с потребностью Вашей кампании.
+        online_days: Вы можете выбрать срок для Вашей кампании между 1 и 60 днями.
+        video_url: Расскажите общественности, что делает Вашу кампанию уникальной и почему необходимо поддержать именно Вас.
+        headline: Ключевая фраза кампании для будущих сторонников.
+        uploaded_image: Это изображение будет использоваться в качестве уменьшенного изображения Вашей кампании (
+          PNG, JPG size 600 x 340 )

@@ -1,0 +1,18 @@
+---
+ru:
+  found_singular: собран
+  found_plural: собрано
+  project_singular: кампания
+  project_plural: кампании
+  contribution_singular: поддержал
+  contribution_plural: поддержали
+  remaining_singular: напоминание
+  remaining_plural: нипоминания
+  created_project:
+    zero: не создавал кампаний
+    one: "%{count} кампания создана"
+    other: "%{count} кампаний создано"
+  contributed_project:
+    zero: еще не поддержал компаний
+    one: "%{count} компания поддержана"
+    other: "%{count} компаний поддержано"

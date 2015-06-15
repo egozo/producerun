@@ -1,0 +1,94 @@
+---
+ru:
+  devise:
+    feedback_tab:
+      title: Отзывы и помощь
+      header_html: Добро пожаловать <br/> новый участник Русьзверь.рф
+      blog_button: Читайте больше в блоге
+      form_feedback_link: Отправить отзыв
+      contact_link: Контакты
+    links:
+      forgot_password: Я забыл пароль
+    confirmations:
+      confirmed: Ваш аккаунт был подтвержден.
+      send_instructions: В течении нескольких минут Вы получите e-mail с подтверждением регистрации на сайте.
+      send_paranoid_instructions: Если Ваш e-mail уже зарегистрирован на сайте, Вы получите на него инструкции о подтвеждении аккаунта.
+    failure:
+      password_token: Действие ссылки на восстановление пароля истекло. Попробуйте заново.
+      already_authenticated: 'Уже подтвержден.'
+      inactive: Эта электронная почта принадлежит отключенному аккаунту.
+      invalid: Email или пароль неверен
+      invalid_token: Ключ аутентификации не действителен.
+      locked: Ваш аккаунт закрыт.
+      not_found_in_database: Email или пароль неверен
+      timeout: Время Вашей сессии истекло, пожалуйста войдите снова, чтобы продолжить.
+      unauthenticated: 'Не аутентифицированный'
+      unconfirmed: Перед переходом проверьте свой аккаунт.
+    mailer:
+      confirmation_instructions:
+        subject: Инструкция по подтверждению
+      reset_password_instructions:
+        subject: Сбросить пароль
+      unlock_instructions:
+        subject: Инструкции по выпуску
+    omniauth_callbacks:
+      failure: Невозможно авторизировать %{kind} аккаунт по причине " %{reason} " .
+      success: 'успех'
+    passwords:
+      no_token: 'нет ключа'
+      send_instructions: Письмо с инструкцией по восстановлению пароля только что отправлено на Вашу почту.
+      send_paranoid_instructions: Если Ваш e-mail уже зарегистрирован на сайте, Вы получите на него инструкции о подтвеждении аккаунта.
+      updated: 'обновлен'
+      updated_not_active: Ваш пароль был успешно изменен.
+      new:
+        site_title: Я забыл пароль
+        title: Подтвердите Ваш email и запросите смену пароля
+        submit: Выслать инструкции по смене пароля
+      edit:
+        site_title: Установить новый пароль
+        label_new_password: Новый пароль
+        title: Установить новый пароль
+        subtitle: Установить новый пароль для входа в личный кабинет.
+        submit: Установить новый пароль
+    registrations:
+      destroyed: До свидания!
+      signed_up: 'Зарегистрирован'
+      signed_up_but_inactive: Вы успешно зарегистрированы, однако для входа в личный кабинет необходимо активировать аккаунт.
+      signed_up_but_locked: Вы успешно зарегистрированы.
+      signed_up_but_unconfirmed: Письмо с ссылкой на подтверждение аккаунта выслано на Ваш email.
+      update_needs_confirmation: Ваш аккаунт успешно обновлен, проверьте Ваш email.
+      updated: Ваш аккаунт успешно обновлен.
+    sessions:
+      new:
+        site_title: Вход
+        submit: Вход
+        title: Войдите, используя Ваш email
+        login_title: Вход
+        login_subtitle: Если у Вас уже имеется аккаунт
+        register_title: Зарегистрируйтесь
+        register_subtitle: Испольлзуйте Ваш e -mail
+        with_facebook: Войдите, используя аккаунт Facebook
+        with_facebook_subtitle: Самый быстрый способ входа на сайт
+        with_another_social: Twitter will be removed in a week
+        google_warning_html: 'If you wore a <strong>Google</strong> account:'
+        google_step_1: 1 - Click %{link}
+        google_step_2: 2 - Follow the next steps to create a new password.
+        with_another_social_subtitle: <a target="_blank" href="http://blog.catarse.me/mudanca-no-sistema-de-login/">Leia
+          this post</a> for more information
+      signed_in: 'Войдите'
+      signed_out: 'Выйдите'
+    unlocks:
+      send_instructions: В течении нескольких минут Вы получите e-mail с инструкцией о разблокировке аккаунта.
+      send_paranoid_instructions: Если Ваш e-mail уже зарегистрирован на сайте, Вы получите на него инструкции по его разблокированию.
+      unlocked: Ваш аккаунт успешно разблокирован.
+  errors:
+    messages:
+      already_confirmed: уже подтвержден
+      confirmation_period_expired: Время на подтверждение закончилось %{period}
+        , пожалуйста, создайте новую запись.
+      expired: закончилось, пожалуйста, запросите нового
+      not_found: не найден
+      not_locked: не был заблокирован
+      not_saved:
+        one: 'один'
+        other: 'другой'

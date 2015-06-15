@@ -1,0 +1,209 @@
+en:
+  date:
+    abbr_day_names:
+    - Понедельник	
+    - Вторник
+    - Среда
+    - Четверг
+    - Пятница
+    - Суббота
+    - Воскресенье
+    abbr_month_names:
+    -
+    - Январь
+    - Февраль
+    - Март
+    - Апрель
+    - Май
+    - Июнь
+    - Июль
+    - Август
+    - Сентябрь
+    - Октябрь
+    - Ноябрь
+    - Декабрь
+    day_names:
+    - Понедельник	
+    - Вторник
+    - Среда
+    - Четверг
+    - Пятница
+    - Суббота
+    - Воскресенье
+    formats:
+      default: ! '%d-%m-%Y'
+      with_time: ! "%d/%m/%Y - %H:%M"
+      long: ! '%B %d, %Y'
+      short: ! '%b %d'
+    month_names:
+    -
+    - Январь
+    - Февраль
+    - Март
+    - Апрель
+    - Май
+    - Июнь
+    - Июль
+    - Август
+    - Сентябрь
+    - Октябрь
+    - Ноябрь
+    - Декабрь
+    order:
+    - :год
+    - :месяц
+    - :день
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: около часа
+        other: около %{count} часов
+      about_x_months:
+        one: около месяца
+        other: около %{count} месяцев
+      about_x_years:
+        one: около года
+        other: около %{count} лет
+      almost_x_years:
+        one: почти год
+        other: почти %{count} лет
+      half_a_minute: полминуты
+      less_than_x_minutes:
+        one: меньше минуты
+        other: меньше, чем %{count} минут
+      less_than_x_seconds:
+        one: меньше одной секунды
+        other: меньше, чем %{count} секунд
+      over_x_years:
+        one: свыше года
+        other: свыше %{count} лет
+      x_days:
+        one: 1 день
+        other: ! '%{count} дней'
+      x_minutes:
+        one: 1 minute
+        other: ! '%{count} минут'
+      x_months:
+        one: 1 month
+        other: ! '%{count} месяцев'
+      x_seconds:
+        one: 1 second
+        other: ! '%{count} секунд'
+    prompts:
+      day: День
+      hour: Час
+      minute: Минута
+      month: Месяц
+      second: Секунда
+      year: Год
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: должен быть принят
+      blank: не может быть чистым
+      confirmation: не соответствует подтверждению
+      empty: не может быть пустым
+      equal_to: должен соответствовать %{count}
+      even: должно быть ровным
+      exclusion: зарезервирован
+      greater_than: должно быть больше, чем %{count}
+      greater_than_or_equal_to: должно быть больше или равным, чем %{count}
+      inclusion: не включен в список
+      invalid: недействительно
+      less_than: должны быть меньше, чем %{count}
+      less_than_or_equal_to: должно быть меньше или равно, чем %{count}
+      not_a_number: не число
+      not_an_integer: должно быть целое число
+      odd: должно быть нечетным
+      record_invalid: ! 'Проверка неудачна: %{errors}'
+      taken: уже занят
+      too_long:
+        one: слишком длинное (максимум - 1 знак)
+        other: слишком длинное (максимум -  %{count} знаков)
+      too_short:
+        one: слишком коротко (минимум - 1 знак)
+        other: слишком коротко (минимум %{count} знаков)
+      wrong_length:
+        one: неправильная длина (должен быть 1 знак)
+        other: неправильная длина (должен быть %{count} знаков)
+    template:
+      body: ! 'Были проблемы со следующими полями:'
+      header:
+        one: ошибка не позволила этот %{model} сохранить
+        other: ! '%{count} ошибки не позволила этот %{model} сохранить'
+  helpers:
+    select:
+      prompt: Пожалуйста, выберите
+    submit:
+      create: Создать %{model}
+      submit: Сохранить %{model}
+      update: Обновить %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        precision: 0
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Миллиард
+          million: Миллион
+          quadrillion: Квадриллион
+          thousand: Тысяча
+          trillion: Триллиард
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', и '
+      two_words_connector: ! ' и '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      estimate: "%B/%Y"
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+      posts: "%d %b %Y"
+    pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
+

@@ -1,0 +1,6 @@
+﻿---
+ru:
+  will_paginate:
+    next: Следующая »
+    page_gap: "..."
+    previous: "«Предыдущая"
