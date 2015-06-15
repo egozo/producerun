@@ -1,0 +1,33 @@
+---
+ru:
+  layouts:
+    footer:
+      links:
+        jobs: Работа / Вакансии
+        blog: Блог
+        contact: Контакты
+        discover: Проекты
+        start: Как это работает
+        expiring: В заключении...
+        facebook: Facebook
+        faq: FAQ
+        guides: Руководство пользователя
+        feedback: Обратная связь
+        github: Github
+        instagram: Instagram
+        near: Рядом со мной
+        press: Пресса
+        privacy: Политика конфиденциальности
+        recents: последний
+        recommended: Рекомендуемые
+        submit: Утвердить кампанию
+        terms: Правила пользования
+        twitter: Twitter
+      texts:
+        copyleft: русьзверь.рф
+      titles:
+        about: о нас
+        contact: Контакты
+        newsletter: Подписка 
+        sitemap: Карта сайта
+        social: Социальные сети

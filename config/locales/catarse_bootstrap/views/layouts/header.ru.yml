@@ -1,0 +1,21 @@
+---
+ru:
+  layouts:
+    header:
+      blog: Блог
+      discover: Проекты
+      faq: FAQ
+      help: Помощь
+      profile: Профиль
+      projects: Мои проекты
+      signin: Войти
+      signup: Зарегистрироваться
+      submit: Начать кампанию
+      search: Найти кампанию
+    login:
+      login_with_facebook: Войти, используя facebook
+    user:
+      my_contributions: Поддержано
+      logout: Выйти
+      my_credits: Баланс
+      refund_link: Возврат средств

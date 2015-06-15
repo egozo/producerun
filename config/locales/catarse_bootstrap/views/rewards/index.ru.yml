@@ -1,0 +1,26 @@
+---
+ru:
+  rewards:
+    form:
+      edit: редактировать вознаграждение
+      reward: вознаграждение
+      info_box: ¬ы можете ограничить размер вознаграждени€.
+      minimum_value: '—тавка:'
+      deliver_at: '—роки доставки:'
+      description: 'описание:'
+      limit_reward: ограничение вознаграждени€
+      available: доступно
+      submit: подтвердить
+    index:
+      select_reward: ¬ыбрать это вознаграждение
+      display_remaining: "%{remaining} %{maximum} из доступных"
+      dont_want: ќплата по доставке
+      limited: ограничено
+      sold_out: продано
+      contributions_to_confirm:
+        one: 1 поддержал.
+        other: "%{count} поддержало."
+      edit_reward: редактировать награду
+      new_reward: зарегистрировать вознаграждение
+      reward_deliver_time: "<b>—рок доставки: </b> %{estimate}"
+      reward_title: ќт %{minimum} или более
